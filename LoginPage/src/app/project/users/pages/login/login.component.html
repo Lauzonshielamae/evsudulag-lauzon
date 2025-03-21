@@ -1,6 +1,7 @@
 <div class="form-container">
     <div class="form">
         <h3>Login To Your Account</h3>
+        <p class="err" *ngIf="userError">{{userError}}</p>
         <form [formGroup]="Form" (ngSubmit)="onSubmit()">
             <mat-form-field>
                 <mat-label>Username</mat-label>
